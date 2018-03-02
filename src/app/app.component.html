@@ -1,0 +1,18 @@
+<h1>{{titulo}}</h1>
+<banda-detalle[banda]="banda"></banda-detalle>
+
+<div>
+    <label> Nombre: </label>
+    <input *ngIf="banda" [(ngModel)]="banda.nombre" placeholder="nombre de la banda">
+    <ul class= "bandas">
+        <li 
+        [class.selected]="bandaItem === banda"
+        *ngFor="let bandaItem of bandas" 
+        (click)="Seleccionar(bandaItem)" >
+            <span class="insignia">{{bandaItem.id}}</span> {{bandaItem.nombre}}
+        </li>
+    </ul>
+
+    
+    
+</div>
