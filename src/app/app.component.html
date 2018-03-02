@@ -1,9 +1,9 @@
 <h1>{{titulo}}</h1>
-<banda-detalle[banda]="banda"></banda-detalle>
+
+<banda-detalle [banda]="banda"></banda-detalle>
 
 <div>
-    <label> Nombre: </label>
-    <input *ngIf="banda" [(ngModel)]="banda.nombre" placeholder="nombre de la banda">
+        
     <ul class= "bandas">
         <li 
         [class.selected]="bandaItem === banda"
@@ -11,8 +11,5 @@
         (click)="Seleccionar(bandaItem)" >
             <span class="insignia">{{bandaItem.id}}</span> {{bandaItem.nombre}}
         </li>
-    </ul>
-
-    
-    
+    </ul> 
 </div>

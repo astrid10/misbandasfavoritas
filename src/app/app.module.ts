@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import {BandaDetalleComponent} from './banda-detalle.component';
+import {BandaDetalleComponent } from './banda-detalle.component';
 
 
 import { AppComponent } from './app.component';
@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BandaDetalleComponent
     
   ],
   imports: [

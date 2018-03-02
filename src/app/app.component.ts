@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
+import { Banda } from './banda';
 
-export class Banda{
-  id:number;
-  nombre:string;
-  constructor(id,nombre){
-    this.id=id;
-    this.nombre=nombre;
-  }
-}
+
 const BANDAS:Banda[]=[
   {id: 11, nombre: 'sebastian yatra'},
   {id: 12, nombre: 'felipe santos'},
